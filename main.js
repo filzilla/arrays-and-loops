@@ -20,13 +20,14 @@ function longestString(strings){
   return a.length - b.length;
 });
 console.log(strings.length);
-
+}
 //OR
 
 function longestString(array){
 
+  var longestString= array[0];
+
   for(i = 0; i > array.length; i++){
-     var longestString= array[0];
 
     if(array[0].length > longestString.length){
       var longestString = array[i];
@@ -54,7 +55,7 @@ function smallestNumber(numbers){
   strings.sort(function(a,b){
   return a.length - b.length;
 });
-
+}
 console.log(numbers.length);
 
 //OR
@@ -67,8 +68,9 @@ function smallestNumber(array){
 
 function smallestNumber(array){
 
+ var smallestNumber= array[0];
+
   for(i = 0; i > array.length; i++){
-     var smallestNumber= array[0];
 
     if(array[0] < array[i]){
       var smallestNumber = array[i];
@@ -134,7 +136,9 @@ console.assert(arrayReverser(numbers).toString() === '6,5,101,3,11,7,9,18,4,12,1
 // A:
 
  function sumArrayOfNumbers(array){
+
    for(i = 0; i < array.length; i++){
+
      var sumArrayOfNumbers = sum += array(i);
    }
  }
@@ -147,10 +151,14 @@ console.assert(arrayReverser(numbers).toString() === '6,5,101,3,11,7,9,18,4,12,1
 // A:
 function numbersOver10(array){
 
+  var numbersOver10= array[0];
+
   for(i = 0; i > array.length; i++){
-     var numbersOver10= array[0];
+
+    var numbersOver10 = array[i];
+    
     if(array[0] > 10){
-      var numbersOver10 = array[i];
+
     }
     return numbersOver10
   }
@@ -165,8 +173,11 @@ console.assert(numbersOver10(numbers).toString() === "12,18,11,101", {'message':
 // and returns an array of only the numbers greater than the number passed to the function
 // A:
 function numbersOverX( array, x){
-  for(i = 0; i > array.length; i++){
-     var numbersOverX= array[0];
+
+    var numbersOverX= array[0];
+
+    for(i = 0; i > array.length; i++){
+
     if(array[0] > x){
       var numbersOverX = array[i];
     }
@@ -208,13 +219,13 @@ var instructors = [
 
 var instructorNameDiscipline = instructors[5];
 // greenvIlleInstructor = <your answer>
-[Will, JavaScript]
+//  answer: [Will, JavaScript]
 var instructorOne = instructors[4][0];
 // instructorOne = <your answer>
-Dan
+//  answer: Dan
 var instructorTwo = instructors[0][1];
 // instructorTwo = <your answer>
-Javascript
+// answer: Javascript
 var instructorThree = instructors[2][0];
 // instructorThree = <your answer>
-Brit
+// answer: Brit
